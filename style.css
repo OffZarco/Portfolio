@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+
+.header img {
+    height: 95vh;
+    filter: brightness(40%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.header .text_main {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header .text_main h1,
+.header .text_main h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.header .text_main p {
+    font-size: 25px;
+    line-height: 70px;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.navbar .logo {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.navbar .menu a:active {
+    background-color: #1a1a1a;
+    color: aliceblue;
+}
+
+.navbar .menu a:hover {
+    background-color: #1a1a1a;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* presentation */
+.me {
+    text-align: center;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.me .superimpose,
+.portfolio .superimpose,
+.services .superimpose,
+.contact .superimpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.me .superimpose h1,
+.me .superimpose h2,
+
+.portfolio .superimpose h1,
+.portfolio .superimpose h2,
+
+.services .superimpose h1,
+.services .superimpose h2,
+
+.skills .superimpose h1,
+.skills .superimpose h2,
+
+.contact .superimpose h1,
+.contact .superimpose h2 {
+    position: absolute;
+}
+
+.me .superimpose h1,
+.portfolio .superimpose h1,
+.services .superimpose h1,
+.contact .superimpose h1,
+.skills .superimpose h1 {
+    font-size: 7em;
+    opacity: 0.06;
+}
+
+.me .superimpose h2,
+.portfolio .superimpose h2,
+.services .superimpose h2,
+.skills .superimpose h2,
+.contact .superimpose h2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.me hr,
+.portfolio hr,
+.services hr,
+.contact hr,
+.skills hr {
+    width: 7%;
+    margin: auto;
+    height: 2px;
+    border: none;
+    background-color: #1a1a1a;
+}
+
+.me .text_me {
+    padding: 50px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.me .text_me a {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* Mes travaux */
+
+#btnPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#btnPortfolio button {
+    padding: 12px 30px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#btnPortfolio button:hover {
+    color: aliceblue;
+    background-color: #1a1a1a;
+}
+
+.row,
+.row>.column {
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.show {
+    display: block;
+}
+
+/* Services */
+
+.block_services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.block_services .content_services {
+    width: 22%;
+    margin: 30px;
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
+}
+
+.block_services h2,
+.block_services i {
+    display: flex;
+    justify-content: center;
+}
+
+.block_services h2 {
+    font-size: 20px;
+}
+
+.block_services i {
+    padding: 20px;
+    font-size: 3.5em;
+}
+
+
+
+/* competences */
+
+.progress_bars {
+    display: flex;
+}
+
+#crop-right {
+    width: 30%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: left;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+}
+
+.progress_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.20);
+}
+
+.progress_bar .bg {
+    padding-left: 10px;
+}
+
+.progress_bar i {
+    margin: 5px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.progress_bar span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.html {
+    background-color: rgba(255, 68, 0, 0.8);
+    width: 94%;
+}
+
+.css {
+    background-color: rgba(11, 11, 141, 0.8);
+    width: 94%;
+}
+
+.php {
+    background-color: rgba(100, 148, 237, 0.8);
+    width: 90%;
+}
+
+.wpss {
+    background-color: rgba(95, 158, 160, 0.8);
+    width: 80%;
+}
+
+.data {
+    background-color: rgba(121, 164, 46, 0.8);
+    width: 75%;
+}
+
+.java2 {
+    background-color: rgba(249, 91, 117, 0.8);
+    width: 70%;
+}
+
+.symph {
+    background-color: rgba(42, 17, 2, 0.8);
+    width: 70%;
+}
+
+.js {
+    background-color: rgba(235, 171, 10, 0.8);
+    width: 70%;
+}
+
+
+/* Contact */
+
+.contact {
+    background-color: #f5f5f5;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 50%;
+    margin: 15px;
+    padding: 10px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact button {
+    background-color: #1a1a1a;
+    color: aliceblue;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* footer */
+
+.footer_content {
+    background-color: #1a1a1a;
+    padding: 70px 0;
+}
+
+footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons a,
+footer p {
+    color: aliceblue;
+}
+
+.icons a {
+    margin: 10px;
+    border: solid 1px #f5f5f5;
+    border-radius: 50px;
+}
+
+.icons i {
+    font-size: 25px;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:1250px) {
+    .navbar .brand h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .navbar .menu a {
+        font-size: 14px;
+        letter-spacing: 0;
+        padding: 10px;
+    }
+    .block_services .content_services {
+    width: 37%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:900px){
+    .header .text_main {
+        top: 50%;
+        left: 50%;
+    }
+    .header .text_main h1 {
+        padding-top: 10px;
+        font-size: 26px;
+    }
+    .header .text_main h2 {
+        padding: 15px 0;
+        font-size: 28px;
+    }
+    .header .text_main p {
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .me .superimpose,
+    .portfolio .superimpose,
+    .services .superimpose,
+    .contact .superimpose {
+    padding: 7%;
+    }
+    .me .superimpose h1,
+    .portfolio .superimpose h1,
+    .services .superimpose h1,
+    .contact .superimpose h1{
+        font-size: 50px;
+    }
+    .me .superimpose h2,
+    .portfolio .superimpose h2,
+    .services .superimpose h2,
+    .contact .superimpose h2 {
+        font-size: 30px;
+    }
+    .me .text_me {
+        font-size: 16px;
+    }
+    #btnPortfolio{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    #btnPortfolio button{
+        margin: 3px;
+        width: 100%;
+    }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .column .content {
+        padding: 0;
+    }
+    .progress_bars {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .skills{
+        width: 90%;
+        margin: auto;
+    }
+    .progress_bar {
+        margin: 5px 0;
+        border-radius: 15px;
+    }
+    .progress_bar .bg {
+        border-radius: 15px;
+    }
+    #crop-right {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    .progress_bar span {
+        font-size: 8px;
+    }
+    .progress_bar span i {
+        font-size: 18px;
+    }
+    .contact input,
+    .contact textarea,
+    .contact button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .column {
+    width: 100%;
+    }
+    .block_services .content_services {
+    width: 100%;
+    }
+    .contact input,
+    .contact textarea,
+    .contact button {
+        width: 100%;
+    }
+    .footer p {
+        font-size: 12ox;
+    }
+}

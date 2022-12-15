@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Alexandre Cousin</title>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--link css-->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <section class="header" id="home">
+      <img src="./img/main.jpg" alt="ordinateur">
+      <div class="text_main">
+        <p>Bonjour,</p>
+        <h1>Je suis Alexandre Cousin</h1>
+        <h2>Développeur web & web mobile</h2>
+        <p>Création moderne et responsive pour web</p>
+      </div>
+    </section>
+
+    <nav class="navbar">
+      <h3 class="logo">Acousin</h3>
+      <div class="menu">
+        <a href="#" id="home">Accueil</a>
+        <a href="#">Présentation</a>
+        <a href="#">Réalisation</a>
+        <a href="#">Activités</a>
+        <a href="#">Compétences</a>
+        <a href="#">Contact</a>
+        <a href="#">Mon CV</a>
+      </div>
+    </nav>
+
+    <section class="me">
+      <div class="superimpose">
+        <h1>Qui suis-je ?</h1>
+        <h2>Présentation</h2>
+      </div>
+      <hr>
+      <div class="text_me">
+        <p><strong>Développeur passionné</strong> dans le domaine du web depuis plus de 6ans, actuellement
+          <strong>développeur web</strong>
+        </p>
+        <p>Je conçois et réalise des sites web du cahier des charges à la mise en ligne.</p>
+        <p>Je développe aussi en <strong>JAVA</strong>, ce qui me permet de développer des applications mobiles android
+        </p>
+        <br>
+        <p>J'ai quelques projets intéressants <a href="#">à voir.</a></p>
+        <p>Vous souhaitez avoir mon CV au format PDF c'est par <a href="#">ici</a></p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="superimpose">
+        <h1>Portfolio</h1>
+        <h2>Mes travaux</h2>
+      </div>
+      <hr>
+      <nav id="btnPortfolio">
+        <button class="btn active" onclick="filterSelection('all')"> Tous</button>
+        <button class="btn" onclick="filterSelection('wordpress')"> Wordpress</button>
+        <button class="btn" onclick="filterSelection('symphony')"> Symphony</button>
+        <button class="btn" onclick="filterSelection('java')"> JAVA</button>
+        <button class="btn" onclick="filterSelection('prestashop')"> Pretashop</button>
+      </nav>
+
+      <div class="row">
+        <div class="column wordpress">
+          <div class="content">
+            <img src="./img/computer1.jpg" alt="computer1">
+          </div>
+        </div>
+        <div class="column wordpress">
+          <div class="content">
+            <img src="./img/computer11.jpg" alt="computer2">
+          </div>
+        </div>
+        <div class="column wordpress">
+          <div class="content">
+            <img src="./img/computer10.jpg" alt="computer3">
+          </div>
+        </div>
+
+        <div class="column symphony">
+          <div class="content">
+            <img src="./img/computer4.jpg" alt="computer">
+          </div>
+        </div>
+        <div class="column symphony">
+          <div class="content">
+            <img src="./img/computer5.jpg" alt="computer5">
+          </div>
+        </div>
+        <div class="column java">
+          <div class="content">
+            <img src="./img/computer12.jpg" alt="computer6">
+          </div>
+        </div>
+
+        <div class="column java">
+          <div class="content">
+            <img src="./img/computer7.jpg" alt="computer7">
+          </div>
+        </div>
+        <div class="column prestashop">
+          <div class="content">
+            <img src="./img/computer8.jpg" alt="computer8">
+          </div>
+        </div>
+        <div class="column prestashop">
+          <div class="content">
+            <img src="./img/computer9.jpg" alt="computer9">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="superimpose">
+        <h1>Services</h1>
+        <h2>Activités.</h2>
+      </div>
+      <hr>
+
+      <article class="block_services">
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-computer"></i>
+            <h2>multi-plateforme</h2>
+          </span>
+        </div>
+
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-code"></i>
+            <h2>Développement web</h2>
+          </span>
+        </div>
+
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-gem"></i>
+            <h2>projets web</h2>
+          </span>
+        </div>
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-bullseye"></i>
+            <h2>Référencement</h2>
+          </span>
+        </div>
+
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-handshake"></i>
+            <h2>Accompagnement</h2>
+          </span>
+        </div>
+
+        <div class="content_services">
+          <span>
+            <i class="fa-solid fa-rocket"></i>
+            <h2>Maintenance</h2>
+          </span>
+        </div>
+      </article>
+    </section>
+
+    <section class="progress_bars">
+      <img id="crop-right" src="./img/html.jpg" alt="">
+
+      <div class="skills">
+        <div class="progress_bar">
+          <div class="bg html">
+            <span><i class="fa-brands fa-html5"></i>html5</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg css">
+            <span><i class="fa-brands fa-css3"></i>css3</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg php">
+            <span><i class="fa-brands fa-php"></i>php</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg wpss">
+            <span><i class="fa-brands fa-wordpress"></i>wordpress</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg data"><span><i class="fas fa-database"></i>mysql</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg java2">
+            <span><i class="fa-brands fa-java"></i>java</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg symph"><span><i class="fab fa-symfony"></i>symphony</span>
+          </div>
+        </div>
+        <div class="progress_bar">
+          <div class="bg js">
+            <span><i class="fa-brands fa-js"></i>javascript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="superimpose">
+        <h1>Contact</h1>
+        <h2>Un projet ensemble ?</h2>
+      </div>
+      <hr>
+      <form id="contact" action="">
+        <input type="Name" placeholder="Nom">
+        <input type="Mail" placeholder="Adresse e-mail">
+        <textarea name="story" id="" cols="33" rows="15" placeholder="Votre message ici"></textarea>
+        <button>Me contacter</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer_content">
+        <div class="icons">
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>© 2022 Alexandre Cousin, Tous droits réservés</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
